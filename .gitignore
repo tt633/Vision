@@ -4,10 +4,6 @@ __pycache__/
 *$py.class
 *.so
 .Python
-env/
-venv/
-.venv
-ENV/
 build/
 develop-eggs/
 dist/
@@ -20,20 +16,36 @@ parts/
 sdist/
 var/
 wheels/
+pip-wheel-metadata/
+share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+MANIFEST
 
-# Flask
-instance/
-.webassets-cache
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+.env
+
+# Database files
+instance/*.db
 *.db
 *.sqlite
 *.sqlite3
 
+# Flask
+instance/
+.webassets-cache
+
 # Environment variables
 .env
-.flaskenv
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
 # IDE
 .vscode/
@@ -44,15 +56,17 @@ instance/
 
 # OS
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
 
 # Logs
 *.log
-
-# Database
-*.db
-migrations/
+logs/
 
 # Temporary files
-create_template.py
-check_user.py
+*.tmp
+*.temp
