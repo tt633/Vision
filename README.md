@@ -34,8 +34,8 @@ A Flask-based web application for managing savings goals with automated savings 
 
 1. **Clone the repository**
 ```bash
-git clone <your-repo-url>
-cd milestone-app
+git clone https://github.com/tt633/Vision.git
+cd Vision
 ```
 
 2. **Create virtual environment**
@@ -105,7 +105,7 @@ See [DBEAVER_CONNECTION.md](DBEAVER_CONNECTION.md) for DBeaver setup instruction
 ## Project Structure
 
 ```
-milestone-app/
+Vision/
 ├── app.py                  # Main Flask application
 ├── models.py               # Database models
 ├── config.py               # Configuration settings
